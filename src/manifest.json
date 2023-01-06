@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "RoNew",
+    "version": "0.0.1",
+    "description": "In a single click, join the newest server of any Roblox experience!",
+    "author": "ThatTimothy",
+    "icons": {
+        "16": "res/icon_16.png",
+        "32": "res/icon_32.png",
+        "64": "res/icon_64.png",
+        "128": "res/icon_128.png"
+    },
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "action": {
+        "default_popup": "html/popup.html",
+        "default_title": "RoNew"
+    },
+    "permissions": [
+        "declarativeContent",
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://www.roblox.com/*",
+        "https://games.roblox.com/*"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "/js/injectedJoinScript.js"
+            ],
+            "matches": [
+                "https://www.roblox.com/*"
+            ]
+        }
+    ]
+}

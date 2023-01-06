@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(25, 25, 27);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 5rem;
+}
+
+#title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#title span:nth-child(1) {
+    color: rgb(255, 0, 29);
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+input {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    width: 12.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: rgb(37, 40, 43);
+    color: white;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 0.25rem;
+
+    transition: border 0.25s, filter 0.25s;
+}
+
+input:focus {
+    border: 1px solid white;
+}
+
+#placeIdLabel {
+    margin-bottom: 0.5rem;
+}
+
+button {
+    font-size: 1.5rem;
+    background-color: rgb(40, 182, 27);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    transition: filter 0.5s;
+    cursor: pointer;
+}
+
+button:disabled, input:disabled {
+    filter: grayscale(0.75);
+    cursor: not-allowed;
+}@keyframes statusTransitionIn {
+    0% {
+        opacity: 0;
+        max-height: 0;
+        margin-top: 0;
+    }
+
+    50% {
+        opacity: 0;
+        max-height: var(--data-height);
+        margin-top: 1rem;
+    }
+
+    100% {
+        opacity: 1;
+        max-height: var(--data-height);
+        margin-top: 1rem;
+    }
+}
+
+@keyframes statusTransitionOut {
+    0% {
+        opacity: 1;
+        max-height: var(--data-height);
+        margin-top: 1rem;
+    }
+
+    50% {
+        opacity: 0;
+        max-height: var(--data-height);
+        margin-top: 1rem;
+    }
+
+    100% {
+        opacity: 0;
+        max-height: 0;
+        margin-top: 0;
+    }
+}
+
+#status, #statusDetailed {
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    --data-height: 1rem;
+    transition: max-height 0.5s;
+}
+
+#statusDetailed {
+    color:rgb(76, 166, 240);
+}
+
+#status[data-visible=true],
+#statusDetailed[data-visible=true] {
+    animation: statusTransitionIn 0.5s both;
+}
+
+#status[data-visible=false],
+#statusDetailed[data-visible=false] {
+    animation: statusTransitionOut 0.5s both;
+}
+
+#status[data-type=error] {
+    color: rgb(243, 52, 52);
+}
+
+#status[data-type=success] {
+    color: rgb(93, 255, 44);
+}
