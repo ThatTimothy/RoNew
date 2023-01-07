@@ -516,9 +516,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const ids = await loadPlaceId()
 
-    tabPlaceId = ids.tabId
-
-    document.getElementById("placeId").value = ids.loadedId || ids.tabId || ""
+    if (ids) {
+        tabPlaceId = ids.tabId
+        document.getElementById("placeId").value =
+            ids.loadedId || ids.tabId || ""
+    }
 
     // Events
     document.getElementById("joinButton").addEventListener("click", joinNewest)
