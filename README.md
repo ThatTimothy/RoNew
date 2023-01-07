@@ -12,3 +12,7 @@ This extension allows you to automatically join the newest server of a Roblox ex
 4. Click "Join Newest"
 
 Note that it may take a while on certain games, as Roblox can stop creating new servers periodically.
+
+# License
+
+See [LICENSE.md](LICENSE.md)
