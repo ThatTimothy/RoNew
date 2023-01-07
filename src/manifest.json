@@ -24,7 +24,6 @@
         "storage"
     ],
     "host_permissions": [
-        "https://www.roblox.com/*",
         "https://games.roblox.com/*"
     ],
     "web_accessible_resources": [
