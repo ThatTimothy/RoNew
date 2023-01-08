@@ -1,0 +1,121 @@
+#rbx-ronew-servers .container-header h2 span:nth-child(1) {
+    color: rgb(255, 0, 29);
+}
+
+#rbx-ronew-servers p {
+    margin: 6px 0;
+}
+
+#rbx-ronew-servers .tooltip-container {
+    position: relative;
+}
+
+#rbx-ronew-servers .tooltip-container::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    
+    left: 125%;
+    top: 50%;
+
+    font-size: 12px;
+    opacity: 0;
+    padding: 6px;
+    background-color: #111214;
+    color: #bdbebe;
+
+    width: max-content;
+
+    pointer-events: none;
+
+    transform: translateY(-50%);
+
+    transition: opacity 0.25s;
+}
+
+#rbx-ronew-servers .tooltip-container:hover::before {
+    opacity: 1;
+}
+
+#rbx-ronew-begin {
+    overflow-y: hidden;
+}
+
+@keyframes RonewBeginOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        height: var(--height);
+    }
+    100% {
+        opacity: 0;
+        height: 0;
+    }
+}
+
+#rbx-ronew-begin[data-visible=false] {
+    animation: RonewBeginOut 0.5s forwards;
+}
+#rbx-ronew-begin[data-gone=true] {
+    display: none;
+    animation: none !important;
+}
+
+#rbx-ronew-status,
+#rbx-ronew-status-detailed {
+    opacity: 0;
+    height: 0;
+    overflow-y: hidden;
+}
+
+#rbx-ronew-status > p,
+#rbx-ronew-status-detailed > p {
+    margin: 0;
+}
+
+.dark-theme .rbx-ronew-status-blue p {
+    color: rgb(76, 166, 240) !important;
+}
+.light-theme .rbx-ronew-status-blue p {
+    color: rgb(36, 143, 231) !important;
+}
+
+#rbx-ronew-status[data-type=error] > p, #rbx-ronew-attempt-status[data-type=error] {
+    color: rgb(243, 52, 52) !important;
+}
+
+#rbx-ronew-status[data-type=success] > p,
+#rbx-ronew-attempt-status[data-type=success] {
+    color: rgb(93, 255, 44) !important;
+}
+
+#rbx-ronew-attempt-status {
+    display: inline-block;
+    margin-left: 6px;
+    padding-bottom: 6px;
+    vertical-align: middle;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#rbx-ronew-attempt-status[data-visible=true] {
+    opacity: 1;
+}
+
+.rbx-ronew-game-server-item-container .card-item {
+    min-height: 0 !important;
+}
+
+#rbx-ronew-running-games ul li button {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.rbx-ronew-server-age-status {
+    color: rgb(93, 255, 44) !important;
+}
+
+.rbx-ronew-server-age-status[data-visible=false] {
+    display: none;
+}

@@ -1,9 +1,9 @@
-console.log("running")
+{
+    let script = document.currentScript
+    let button = script.parentElement
 
-window.Roblox.GameLauncher.joinGameInstance(
-    parseInt(document.body.getAttribute("data-ronew-placeid"), 10),
-    document.body.getAttribute("data-ronew-serverid")
-)
+    let placeId = parseInt(button.getAttribute("data-placeid"), 10)
+    let serverId = button.getAttribute("data-serverid")
 
-document.body.removeAttribute("data-ronew-placeid")
-document.body.removeAttribute("data-ronew-serverid")
+    window.Roblox.GameLauncher.joinGameInstance(placeId, serverId)
+}
