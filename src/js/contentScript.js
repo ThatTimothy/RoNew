@@ -27,6 +27,7 @@ const SHOW_JOINED_TEXT_FOR = 5.0 * 1000
 
 let placeId, containerTemplateContent, serverTemplateContent
 let loadId = 0
+let autoJoin = false
 
 // Custom log so it's clear what logs are from RoNew and what logs are from Roblox
 function log(message, error) {
@@ -380,6 +381,11 @@ async function injectServer(placeId, serverId) {
     button.setAttribute("data-serverid", serverId)
     button.setAttribute("data-created", Date.now())
     button.addEventListener("click", handleJoinButton)
+
+    if (autoJoin) {
+        setAutoJoin(false)
+        button.click()
+    }
 }
 
 // Loads the servers
@@ -387,6 +393,9 @@ async function load(event) {
     setStatus(false)
     setRefreshEnabled(false)
     setAttemptStatus(false)
+    if (loadId != 0) {
+        setAutoJoin(false)
+    }
     loadId += 1
     let thisLoadId = loadId
 
@@ -455,6 +464,30 @@ async function load(event) {
     }
 }
 
+// Sets auto join
+function setAutoJoin(enabled) {
+    const autoRefreshToggle = document.querySelector(
+        "#rbx-ronew-auto-join-switch button"
+    )
+
+    autoJoin = enabled
+
+    if (enabled) {
+        autoRefreshToggle.classList.remove("off")
+        autoRefreshToggle.classList.add("on")
+    } else {
+        autoRefreshToggle.classList.remove("on")
+        autoRefreshToggle.classList.add("off")
+    }
+}
+
+// Toggles auto join
+function toggleAutoJoin(event) {
+    const autoRefreshToggle = event.target
+
+    setAutoJoin(autoRefreshToggle.classList.contains("off"))
+}
+
 // Injects the container into the servers tab
 async function injectContainer() {
     const serverRoot = document.getElementById(
@@ -485,6 +518,13 @@ async function injectContainer() {
     const refreshButton = contentRoot.querySelector(".rbx-refresh")
 
     refreshButton.addEventListener("click", load)
+
+    // Bind auto refresh toggle
+    const autoRefreshToggle = document.querySelector(
+        "#rbx-ronew-auto-join-switch button"
+    )
+
+    autoRefreshToggle.addEventListener("click", toggleAutoJoin)
 }
 
 // Updates the "Created x ago" ages

@@ -119,3 +119,21 @@
 .rbx-ronew-server-age-status[data-visible=false] {
     display: none;
 }
+#rbx-ronew-auto-join-switch {
+    position: relative;
+    float: right;
+    margin-top: 4px;
+    margin-right: 12px;
+    vertical-align: middle;
+    transform: translateY(-50%);
+}
+
+#rbx-ronew-auto-join-switch-label {
+    float: right;
+    margin-right: 6px;
+    transform: translateY(-4.5px);
+}
+
+#rbx-ronew-auto-join-switch .toggle-flip {
+    pointer-events: none;
+}
