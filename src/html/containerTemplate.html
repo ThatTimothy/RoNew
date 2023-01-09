@@ -1,0 +1,49 @@
+<div id="rbx-ronew-servers" class="stack">
+    <div class="container-header">
+        <h2><span>Ro</span><span>New</span></h2>
+        <button
+            type="button"
+            class="btn-more rbx-refresh refresh-link-icon btn-control-xs btn-min-width"
+            disabled
+        >
+            Refresh
+        </button>
+        <span id="rbx-ronew-auto-join-switch">
+            <button
+                role="switch"
+                aria-checked="true"
+                class="btn-toggle receiver-destination-type-toggle off"
+            >
+                <span class="toggle-flip"></span>
+                <span id="toggle-on" class="toggle-on"></span>
+                <span id="toggle-off" class="toggle-off"></span>
+            </button>
+        </span>
+        <span id="rbx-ronew-auto-join-switch-label" class="text"
+            >Auto Join</span
+        >
+        <span
+            class="tooltip-container"
+            data-tooltip="Added by the RoNew extension"
+            ><span class="icon-moreinfo"></span
+        ></span>
+        <span class="text" id="rbx-ronew-attempt-status"></span>
+    </div>
+    <div id="rbx-ronew-begin">
+        <p class="text">To begin, press the button below:</p>
+        <button type="button" class="btn-more btn-secondary-md btn-min-width">
+            Load Servers
+        </button>
+    </div>
+    <div class="text" id="rbx-ronew-status">
+        <p>Initializing...</p>
+    </div>
+    <div class="text rbx-ronew-status-blue" id="rbx-ronew-status-detailed">
+        <p>Initializing...</p>
+    </div>
+    <div class="section tab-server-only">
+        <div id="rbx-ronew-running-games" class="stack server-list-section">
+            <ul class="card-list rbx-ronew-game-server-item-container"></ul>
+        </div>
+    </div>
+</div>
