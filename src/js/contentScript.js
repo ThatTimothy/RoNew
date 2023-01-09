@@ -51,6 +51,11 @@ function sleep(ms) {
     })
 }
 
+function playNotificationSound() {
+    const audio = new Audio(chrome.runtime.getURL("res/notification.mp3"))
+    audio.play()
+}
+
 function animateStatus(container, visible) {
     if (visible) {
         container
@@ -384,6 +389,7 @@ async function injectServer(placeId, serverId) {
 
     if (autoJoin) {
         setAutoJoin(false)
+        playNotificationSound()
         button.click()
     }
 }
