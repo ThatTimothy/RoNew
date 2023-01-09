@@ -6,6 +6,8 @@
 In a single click, join the newest server of any Roblox experience!</p>
 </p>
 
+---
+
 This extension allows you to automatically join the newest server of a Roblox experience, by waiting for the new server to show up.
 
 # Features
