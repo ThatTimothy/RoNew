@@ -32,7 +32,7 @@ let autoJoin = false
 // Custom log so it's clear what logs are from RoNew and what logs are from Roblox
 function log(message, error) {
     if (!error) {
-        console.log(`%c[RoNew] ${message}`, `color: yellow};`)
+        console.log(`%c[RoNew] ${message}`, `color: yellow;`)
     } else {
         const stack = new Error(message).stack
         console.error(`[RoNew] ERROR: ${stack}`)
