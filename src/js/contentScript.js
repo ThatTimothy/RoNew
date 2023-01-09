@@ -402,6 +402,12 @@ async function load(event) {
         beginContainer.setAttribute("data-visible", false)
     }
 
+    const serverContainerRoot = document
+        .getElementById("running-game-instances-container")
+        .querySelector(".tab-server-only .rbx-ronew-game-server-item-container")
+
+    serverContainerRoot.replaceChildren()
+
     await sleep(500)
 
     beginContainer.setAttribute("data-gone", true)
