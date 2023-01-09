@@ -1,5 +1,5 @@
-![RoNew](assets/logo_dark.png#gh-dark-mode-only | width = 50%)
-![RoNew](assets/logo_light.png#gh-light-mode-only | width = 50%)
+![RoNew](assets/logo_dark.png#gh-dark-mode-only | width=50%)
+![RoNew](assets/logo_light.png#gh-light-mode-only | width=50%)
 
 > In a single click, join the newest server of any Roblox experience!
 
