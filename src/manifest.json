@@ -35,7 +35,8 @@
             "resources": [
                 "/html/containerTemplate.html",
                 "/html/serverTemplate.html",
-                "/js/injectedJoinScript.js"
+                "/js/injectedJoinScript.js",
+                "res/notification.mp3"
             ],
             "matches": [
                 "https://www.roblox.com/*"
