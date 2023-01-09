@@ -25,14 +25,17 @@ const BETWEEN_FOUND_DELAY = 5.0 * 1000
 
 const SHOW_JOINED_TEXT_FOR = 5.0 * 1000
 
-let placeId, containerTemplateContent, serverTemplateContent
+let placeId,
+    containerTemplateContent,
+    serverTemplateContent,
+    notificationSoundBlob
 let loadId = 0
 let autoJoin = false
 
 // Custom log so it's clear what logs are from RoNew and what logs are from Roblox
 function log(message, error) {
     if (!error) {
-        console.log(`%c[RoNew] ${message}`, `color: yellow};`)
+        console.log(`%c[RoNew] ${message}`, `color: yellow;`)
     } else {
         const stack = new Error(message).stack
         console.error(`[RoNew] ERROR: ${stack}`)
@@ -51,9 +54,44 @@ function sleep(ms) {
     })
 }
 
-function playNotificationSound() {
-    const audio = new Audio(chrome.runtime.getURL("res/notification.mp3"))
-    audio.play()
+async function preloadContent() {
+    let promises = []
+
+    // Container template content
+    promises.push(
+        fetch(chrome.runtime.getURL("html/containerTemplate.html"))
+            .then((response) => response.text())
+            .then((text) => (containerTemplateContent = text))
+    )
+
+    // Server template content
+    promises.push(
+        fetch(chrome.runtime.getURL("html/serverTemplate.html"))
+            .then((response) => response.text())
+            .then((text) => (serverTemplateContent = text))
+    )
+
+    // Notification sound blob
+    promises.push(
+        fetch(chrome.runtime.getURL("res/notification.mp3"))
+            .then((response) => response.blob())
+            .then((blob) => (notificationSoundBlob = blob))
+    )
+
+    await Promise.all(promises)
+}
+
+async function playNotificationSound() {
+    const url = URL.createObjectURL(notificationSoundBlob)
+
+    const audio = new Audio(url)
+
+    await audio.play()
+    await new Promise((resolve) => {
+        audio.addEventListener("ended", resolve)
+    })
+
+    URL.revokeObjectURL(url)
 }
 
 function animateStatus(container, visible) {
@@ -362,13 +400,6 @@ function setRefreshEnabled(enabled) {
 
 // Adds a server to the list
 async function injectServer(placeId, serverId) {
-    if (!serverTemplateContent) {
-        const response = await fetch(
-            chrome.runtime.getURL("html/serverTemplate.html")
-        )
-        serverTemplateContent = await response.text()
-    }
-
     const serverContainerRoot = document
         .getElementById("running-game-instances-container")
         .querySelector(".tab-server-only .rbx-ronew-game-server-item-container")
@@ -389,8 +420,8 @@ async function injectServer(placeId, serverId) {
 
     if (autoJoin) {
         setAutoJoin(false)
-        playNotificationSound()
         button.click()
+        playNotificationSound()
     }
 }
 
@@ -504,13 +535,6 @@ async function injectContainer() {
         throw new Error("No server root!")
     }
 
-    if (!containerTemplateContent) {
-        const response = await fetch(
-            chrome.runtime.getURL("html/containerTemplate.html")
-        )
-        containerTemplateContent = await response.text()
-    }
-
     serverRoot.insertAdjacentHTML("afterbegin", containerTemplateContent)
 
     const contentRoot = serverRoot.querySelector("#rbx-ronew-servers")
@@ -571,9 +595,12 @@ async function initialize() {
         // Not really a number
         return
     }
+    log(`Found placeId "${placeId}"`)
+
+    // Preload content
+    await preloadContent()
 
     log("Ready!")
-    log(`Found placeId "${placeId}"`)
 
     // Inject container
     await injectContainer()
