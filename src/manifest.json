@@ -23,13 +23,6 @@
             ]
         }
     ],
-    "permissions": [
-        "activeTab",
-        "storage"
-    ],
-    "host_permissions": [
-        "https://games.roblox.com/*"
-    ],
     "web_accessible_resources": [
         {
             "resources": [
