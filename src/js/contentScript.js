@@ -28,7 +28,8 @@ const SHOW_JOINED_TEXT_FOR = 5.0 * 1000
 let placeId,
     containerTemplateContent,
     serverTemplateContent,
-    notificationSoundBlob
+    notificationSoundBlob,
+    injectedJoinScriptURL
 let loadId = 0
 let autoJoin = false
 
@@ -77,6 +78,9 @@ async function preloadContent() {
             .then((response) => response.blob())
             .then((blob) => (notificationSoundBlob = blob))
     )
+
+    // Inject join script url
+    injectedJoinScriptURL = chrome.runtime.getURL("js/injectedJoinScript.js")
 
     await Promise.all(promises)
 }
@@ -364,7 +368,7 @@ function findNewestServerId(placeId, servers) {
 // Injects a join script which launches Roblox into the appropriate place
 async function injectJoinScript(element) {
     const injected = document.createElement("script")
-    injected.src = chrome.runtime.getURL("js/injectedJoinScript.js")
+    injected.src = injectedJoinScriptURL
     element.appendChild(injected)
 }
 
