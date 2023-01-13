@@ -399,7 +399,7 @@ function setRefreshEnabled(enabled) {
 }
 
 // Adds a server to the list
-async function injectServer(placeId, serverId) {
+function injectServer(placeId, serverId) {
     const serverContainerRoot = document
         .getElementById("running-game-instances-container")
         .querySelector(".tab-server-only .rbx-ronew-game-server-item-container")
@@ -492,7 +492,7 @@ async function load(event) {
         }
 
         for (const serverId of serverIds) {
-            await injectServer(placeId, serverId)
+            injectServer(placeId, serverId)
         }
 
         setAttemptStatus("Found server!", "success")
@@ -526,13 +526,13 @@ function toggleAutoJoin(event) {
 }
 
 // Injects the container into the servers tab
-async function injectContainer() {
+function injectContainer() {
     const serverRoot = document.getElementById(
         "running-game-instances-container"
     )
 
     if (!serverRoot) {
-        throw new Error("No server root!")
+        return false
     }
 
     serverRoot.insertAdjacentHTML("afterbegin", containerTemplateContent)
@@ -555,6 +555,8 @@ async function injectContainer() {
     )
 
     autoRefreshToggle.addEventListener("click", toggleAutoJoin)
+
+    return true
 }
 
 // Updates the "Created x ago" ages
@@ -603,7 +605,11 @@ async function initialize() {
     log("Ready!")
 
     // Inject container
-    await injectContainer()
+    const allowed = injectContainer()
+
+    if (!allowed) {
+        return log("Canceled injection: must be logged in")
+    }
 
     // Start update server ages loop
     setInterval(updateServerAges, 250)
@@ -611,4 +617,4 @@ async function initialize() {
     log("Successfully injected & initialized!")
 }
 
-initialize()
+initialize().catch(logError)
