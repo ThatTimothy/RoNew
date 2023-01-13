@@ -13,7 +13,8 @@
     "content_scripts": [
         {
             "matches": [
-                "https://www.roblox.com/games/*"
+                "https://www.roblox.com/games/*",
+                "https://web.roblox.com/games/*"
             ],
             "js": [
                 "js/contentScript.js"
@@ -32,7 +33,8 @@
                 "res/notification.mp3"
             ],
             "matches": [
-                "https://www.roblox.com/*"
+                "https://www.roblox.com/*",
+                "https://web.roblox.com/*"
             ]
         }
     ]
