@@ -6,9 +6,16 @@
 In a single click, join the newest server of any Roblox experience!</p>
 </p>
 
+<div align="center">
+
+[![GitHub Stars](https://img.shields.io/github/stars/ThatTimothy/RoNew?style=for-the-badge&logo=github)](https://github.com/ThatTimothy/RoNew)
+[![Video Demo](https://img.shields.io/youtube/views/vICtZTxcwFE?style=for-the-badge&logo=youtube&label=Video%20Demo)](https://youtu.be/vICtZTxcwFE)
+
+</div>
+
 ---
 
-This extension allows you to automatically join the newest server of a Roblox experience, by waiting for the new server to show up.
+This extension allows you to automatically join the newest server of a Roblox experience, by waiting for the newest server to show up.
 
 # Features
 
@@ -35,11 +42,15 @@ This extension allows you to automatically join the newest server of a Roblox ex
 
 # Installation
 
-## Manually
+## Through the Chrome Webstore
+
+The extension is currently awaiting approval, please use the method below for the time being.
+
+## Manually / For Development
 
 1. Download this repo (Code > Download ZIP)
 2. Go to your [chrome extensions page](chrome://extensions)
-3. Enable developer mode
+3. At the top right, turn on developer mode
 4. Click `Load unpacked`
 5. Select the `src` folder from the extracted zip
 6. Confirm
