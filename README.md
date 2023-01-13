@@ -8,8 +8,8 @@ In a single click, join the newest server of any Roblox experience!</p>
 
 <div align="center">
 
-[![GitHub Stars](https://img.shields.io/github/stars/ThatTimothy/RoNew?style=for-the-badge&logo=github)](https://github.com/ThatTimothy/RoNew)
-[![Video Demo](https://img.shields.io/youtube/views/vICtZTxcwFE?style=for-the-badge&logo=youtube&label=Video%20Demo)](https://youtu.be/vICtZTxcwFE)
+[![GitHub Stars](https://img.shields.io/github/stars/ThatTimothy/RoNew?style=for-the-badge&logo=github&cacheSeconds=3600)](https://github.com/ThatTimothy/RoNew)
+[![Video Demo](https://img.shields.io/youtube/views/vICtZTxcwFE?style=for-the-badge&logo=youtube&label=Video%20Demo&cacheSeconds=3600)](https://youtu.be/vICtZTxcwFE)
 
 </div>
 
