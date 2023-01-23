@@ -78,6 +78,14 @@ Simply click the button below, and then click "Add to Chrome"
 
 Note that it may take a while on certain games, as Roblox can stop creating new servers periodically.
 
+# Issues
+
+If you encounter any issues, please open an issue:
+
+[![Open an issue](https://img.shields.io/github/issues-raw/ThatTimothy/RoNew?label=Open%20an%20issue&logo=github&style=for-the-badge)](https://github.com/ThatTimothy/RoNew/issues/new)
+
+Please include as much detail as possible, such as what you did to get the issue to occur, and what the actual issue is.
+
 # License
 
 See [LICENSE.md](LICENSE.md)
