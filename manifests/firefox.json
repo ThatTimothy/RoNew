@@ -1,0 +1,47 @@
+{
+    "manifest_version": 3,
+    "name": "RoNew",
+    "version": "2.1.3",
+    "description": "In a single click, join the newest server of any Roblox experience!",
+    "author": "ThatTimothy",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "ronew@thattimothy.com",
+            "strict_min_version": "109.0"
+        }
+    },
+    "icons": {
+        "16": "res/icon_16.png",
+        "32": "res/icon_32.png",
+        "64": "res/icon_64.png",
+        "128": "res/icon_128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.roblox.com/games/*",
+                "https://web.roblox.com/games/*"
+            ],
+            "js": [
+                "js/contentScript.js"
+            ],
+            "css": [
+                "css/container.css"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "/html/containerTemplate.html",
+                "/html/serverTemplate.html",
+                "/js/injectedJoinScript.js",
+                "res/notification.mp3"
+            ],
+            "matches": [
+                "https://www.roblox.com/*",
+                "https://web.roblox.com/*"
+            ]
+        }
+    ]
+}

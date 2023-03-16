@@ -8,8 +8,9 @@ In a single click, join the newest server of any Roblox experience!</p>
 
 <div align="center">
 
-[![Chrome Extension](https://img.shields.io/chrome-web-store/v/kocjbdahjmgeecieicmoffnjgboechih?label=Chrome%20web%20store&style=for-the-badge&cacheSeconds=3600&logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R29vZ2xlIENocm9tZTwvdGl0bGU+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAwQzguMjEgMCA0LjgzMSAxLjc1NyAyLjYzMiA0LjUwMWwzLjk1MyA2Ljg0OEE1LjQ1NCA1LjQ1NCAwIDAgMSAxMiA2LjU0NWgxMC42OTFBMTIgMTIgMCAwIDAgMTIgMHpNMS45MzEgNS40N0ExMS45NDMgMTEuOTQzIDAgMCAwIDAgMTJjMCA2LjAxMiA0LjQyIDEwLjk5MSAxMC4xODkgMTEuODY0bDMuOTUzLTYuODQ3YTUuNDUgNS40NSAwIDAgMS02Ljg2NS0yLjI5em0xMy4zNDIgMi4xNjZhNS40NDYgNS40NDYgMCAwIDEgMS40NSA3LjA5bC4wMDIuMDAxaC0uMDAybC01LjM0NCA5LjI1N2MuMjA2LjAxLjQxMy4wMTYuNjIxLjAxNiA2LjYyNyAwIDEyLTUuMzczIDEyLTEyIDAtMS41NC0uMjktMy4wMTEtLjgxOC00LjM2NHpNMTIgMTYuMzY0YTQuMzY0IDQuMzY0IDAgMSAxIDAtOC43MjggNC4zNjQgNC4zNjQgMCAwIDEgMCA4LjcyOFoiIC8+PC9zdmc+)](https://chrome.google.com/webstore/detail/ronew/kocjbdahjmgeecieicmoffnjgboechih)
-[![Video Demo](https://img.shields.io/badge/Video%20Demo-0%3A54-red?style=for-the-badge&logo=youtube&cacheSeconds=3600)](https://youtu.be/vICtZTxcwFE)
+[![Chrome Extension](https://img.shields.io/chrome-web-store/v/kocjbdahjmgeecieicmoffnjgboechih?label=Chrome%20web%20store&style=for-the-badge&color=4285F4&cacheSeconds=3600&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/ronew/kocjbdahjmgeecieicmoffnjgboechih)
+[![Firefox Extension](https://img.shields.io/amo/v/RoNew?label=Firefox%20add-ons&logo=firefox-browser&logoColor=white&style=for-the-badge&color=FF7139&cacheSeconds=3600)](https://addons.mozilla.org/addon/ronew/)
+[![Video Demo](https://img.shields.io/badge/Video%20Demo-0%3A54-red?style=for-the-badge&logo=youtube&color=green&cacheSeconds=3600)](https://youtu.be/vICtZTxcwFE)
 
 </div>
 
@@ -42,38 +43,70 @@ This extension allows you to automatically join the newest server of a Roblox ex
 
 # Installation
 
-## Through the Chrome Webstore
+## Through the Chrome Web Store
 
 Simply click the button below, and then click `Add to Chrome`
 
-[![Chrome Extension](https://img.shields.io/chrome-web-store/v/kocjbdahjmgeecieicmoffnjgboechih?label=Chrome%20web%20store&style=for-the-badge&cacheSeconds=3600&logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R29vZ2xlIENocm9tZTwvdGl0bGU+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAwQzguMjEgMCA0LjgzMSAxLjc1NyAyLjYzMiA0LjUwMWwzLjk1MyA2Ljg0OEE1LjQ1NCA1LjQ1NCAwIDAgMSAxMiA2LjU0NWgxMC42OTFBMTIgMTIgMCAwIDAgMTIgMHpNMS45MzEgNS40N0ExMS45NDMgMTEuOTQzIDAgMCAwIDAgMTJjMCA2LjAxMiA0LjQyIDEwLjk5MSAxMC4xODkgMTEuODY0bDMuOTUzLTYuODQ3YTUuNDUgNS40NSAwIDAgMS02Ljg2NS0yLjI5em0xMy4zNDIgMi4xNjZhNS40NDYgNS40NDYgMCAwIDEgMS40NSA3LjA5bC4wMDIuMDAxaC0uMDAybC01LjM0NCA5LjI1N2MuMjA2LjAxLjQxMy4wMTYuNjIxLjAxNiA2LjYyNyAwIDEyLTUuMzczIDEyLTEyIDAtMS41NC0uMjktMy4wMTEtLjgxOC00LjM2NHpNMTIgMTYuMzY0YTQuMzY0IDQuMzY0IDAgMSAxIDAtOC43MjggNC4zNjQgNC4zNjQgMCAwIDEgMCA4LjcyOFoiIC8+PC9zdmc+)](https://chrome.google.com/webstore/detail/ronew/kocjbdahjmgeecieicmoffnjgboechih)
+[![Chrome Extension](https://img.shields.io/chrome-web-store/v/kocjbdahjmgeecieicmoffnjgboechih?label=Chrome%20web%20store&style=for-the-badge&color=4285F4&cacheSeconds=3600&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/ronew/kocjbdahjmgeecieicmoffnjgboechih)
+
+## Through Firefox Add-ons
+
+Simply click the button below, and then click `Add to Firefox`
+
+[![Firefox Extension](https://img.shields.io/amo/v/RoNew?label=Firefox%20add-ons&logo=firefox-browser&logoColor=white&style=for-the-badge&color=FF7139&cacheSeconds=3600)](https://addons.mozilla.org/addon/ronew/)
 
 ## Manually / For Development
+
 <details>
 <summary>Expand</summary>
 
-**This option should only be used if the above option will not work / an update has not been approved on the chrome webstore yet**. Extensions that are added this way have **full permissions**, so please be careful. Only do the following if you know what you are doing.
+**This option should only be used if the above option will not work / an update has not been approved on the webstore yet**. Only do the following if you know what you are doing.
 
 <details>
-<summary>Proceed</summary>
+<summary>Chrome Instructions</summary>
 
 1. Download this repo (Code > Download ZIP)
-2. Go to your [chrome extensions page](chrome://extensions)
-3. At the top right, turn on developer mode
-4. Click `Load unpacked`
-5. Select the `src` folder from the extracted zip
-6. Confirm
+2. Extract the zip, drag the `manifests/chrome.json` file into the `src` folder
+3. Rename `chrome.json` to `manifest.json`
+4. Go to your [chrome extensions page](chrome://extensions)
+5. At the top right, turn on developer mode
+6. Click `Load unpacked`
+7. Select the `src` folder from the extracted zip
+8. Confirm
+
+</details>
+<details>
+<summary>Firefox Instructions</summary>
+
+1. Download this repo (Code > Download ZIP)
+2. Extract the zip, drag the `manifests/firefox.json` file into the `src` folder
+3. Rename `firefox.json` to `manifest.json`
+4. Go to your [firefox addons page](about:debugging#/runtime/this-firefox)
+5. Click `Load Temporary Add-on...`
+6. Select the `manifest.json` file from the `src` folder from the extracted zip
+7. Confirm
 
 </details>
 </details>
 
 # Usage
 
-1. Navigate to a roblox game page ([try this one](https://www.roblox.com/games/1689414409))
-2. Go to the `Servers` tab
-3. You should see a `RoNew` section
-4. Click `Load New Servers`
-5. Enjoy!
+1.  Navigate to a roblox game page ([try this one](https://www.roblox.com/games/1689414409))
+2.  <details>
+    <summary>
+    If on Firefox, allow permissions (click to expand)
+    </summary>
+
+    ![Instructions GIF](assets/firefox_permissions.gif)
+
+    `Extensions` -> `RoNew Settings` -> `Always allow on roblox.com`
+
+        </details>
+
+3.  Go to the `Servers` tab
+4.  You should see a `RoNew` section
+5.  Click `Load New Servers`
+6.  Enjoy!
 
 Note that it may take a while on certain games, as Roblox can stop creating new servers periodically.
 
@@ -81,7 +114,7 @@ Note that it may take a while on certain games, as Roblox can stop creating new 
 
 If you encounter any issues, please open an issue:
 
-[![Open an issue](https://img.shields.io/github/issues-raw/ThatTimothy/RoNew?label=Open%20an%20issue&logo=github&style=for-the-badge)](https://github.com/ThatTimothy/RoNew/issues/new)
+[![Open an issue](https://img.shields.io/github/issues-raw/ThatTimothy/RoNew?label=Open%20an%20issue&logo=github&style=for-the-badge&cacheSeconds=3600)](https://github.com/ThatTimothy/RoNew/issues/new)
 
 Please include as much detail as possible, such as what you did to get the issue to occur, and what the actual issue is.
 
