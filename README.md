@@ -75,6 +75,7 @@ Simply click the button below, and then click `Add to Firefox`
 8. Confirm
 
 </details>
+<details>
 <summary>Firefox Instructions</summary>
 
 1. Download this repo (Code > Download ZIP)
@@ -90,22 +91,22 @@ Simply click the button below, and then click `Add to Firefox`
 
 # Usage
 
-1. Navigate to a roblox game page ([try this one](https://www.roblox.com/games/1689414409))
-2. <details>
-   <summary>
-   If on Firefox, allow permissions (click to expand)
-   </summary>
+1.  Navigate to a roblox game page ([try this one](https://www.roblox.com/games/1689414409))
+2.  <details>
+    <summary>
+    If on Firefox, allow permissions (click to expand)
+    </summary>
 
     ![Instructions GIF](assets/firefox_permissions.gif)
 
     `Extensions` -> `RoNew Settings` -> `Always allow on roblox.com`
 
-       </details>
+        </details>
 
-3. Go to the `Servers` tab
-4. You should see a `RoNew` section
-5. Click `Load New Servers`
-6. Enjoy!
+3.  Go to the `Servers` tab
+4.  You should see a `RoNew` section
+5.  Click `Load New Servers`
+6.  Enjoy!
 
 Note that it may take a while on certain games, as Roblox can stop creating new servers periodically.
 
