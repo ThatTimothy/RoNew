@@ -8,8 +8,9 @@ In a single click, join the newest server of any Roblox experience!</p>
 
 <div align="center">
 
-[![Chrome Extension](https://img.shields.io/chrome-web-store/v/kocjbdahjmgeecieicmoffnjgboechih?label=Chrome%20web%20store&style=for-the-badge&cacheSeconds=3600&logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R29vZ2xlIENocm9tZTwvdGl0bGU+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAwQzguMjEgMCA0LjgzMSAxLjc1NyAyLjYzMiA0LjUwMWwzLjk1MyA2Ljg0OEE1LjQ1NCA1LjQ1NCAwIDAgMSAxMiA2LjU0NWgxMC42OTFBMTIgMTIgMCAwIDAgMTIgMHpNMS45MzEgNS40N0ExMS45NDMgMTEuOTQzIDAgMCAwIDAgMTJjMCA2LjAxMiA0LjQyIDEwLjk5MSAxMC4xODkgMTEuODY0bDMuOTUzLTYuODQ3YTUuNDUgNS40NSAwIDAgMS02Ljg2NS0yLjI5em0xMy4zNDIgMi4xNjZhNS40NDYgNS40NDYgMCAwIDEgMS40NSA3LjA5bC4wMDIuMDAxaC0uMDAybC01LjM0NCA5LjI1N2MuMjA2LjAxLjQxMy4wMTYuNjIxLjAxNiA2LjYyNyAwIDEyLTUuMzczIDEyLTEyIDAtMS41NC0uMjktMy4wMTEtLjgxOC00LjM2NHpNMTIgMTYuMzY0YTQuMzY0IDQuMzY0IDAgMSAxIDAtOC43MjggNC4zNjQgNC4zNjQgMCAwIDEgMCA4LjcyOFoiIC8+PC9zdmc+)](https://chrome.google.com/webstore/detail/ronew/kocjbdahjmgeecieicmoffnjgboechih)
-[![Video Demo](https://img.shields.io/badge/Video%20Demo-0%3A54-red?style=for-the-badge&logo=youtube&cacheSeconds=3600)](https://youtu.be/vICtZTxcwFE)
+[![Chrome Extension](https://img.shields.io/chrome-web-store/v/kocjbdahjmgeecieicmoffnjgboechih?label=Chrome%20web%20store&style=for-the-badge&color=4285F4&cacheSeconds=3600&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/ronew/kocjbdahjmgeecieicmoffnjgboechih)
+[![Firefox Extension](https://img.shields.io/amo/v/RoNew?label=Firefox%20add-ons&logo=firefox-browser&logoColor=white&style=for-the-badge&color=FF7139&cacheSeconds=3600)](https://addons.mozilla.org/addon/ronew/)
+[![Video Demo](https://img.shields.io/badge/Video%20Demo-0%3A54-red?style=for-the-badge&logo=youtube&color=green&cacheSeconds=3600)](https://youtu.be/vICtZTxcwFE)
 
 </div>
 
@@ -42,11 +43,17 @@ This extension allows you to automatically join the newest server of a Roblox ex
 
 # Installation
 
-## Through the Chrome Webstore
+## Through the Chrome Web Store
 
 Simply click the button below, and then click `Add to Chrome`
 
-[![Chrome Extension](https://img.shields.io/chrome-web-store/v/kocjbdahjmgeecieicmoffnjgboechih?label=Chrome%20web%20store&style=for-the-badge&cacheSeconds=3600&logo=data:image/svg%2bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R29vZ2xlIENocm9tZTwvdGl0bGU+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAwQzguMjEgMCA0LjgzMSAxLjc1NyAyLjYzMiA0LjUwMWwzLjk1MyA2Ljg0OEE1LjQ1NCA1LjQ1NCAwIDAgMSAxMiA2LjU0NWgxMC42OTFBMTIgMTIgMCAwIDAgMTIgMHpNMS45MzEgNS40N0ExMS45NDMgMTEuOTQzIDAgMCAwIDAgMTJjMCA2LjAxMiA0LjQyIDEwLjk5MSAxMC4xODkgMTEuODY0bDMuOTUzLTYuODQ3YTUuNDUgNS40NSAwIDAgMS02Ljg2NS0yLjI5em0xMy4zNDIgMi4xNjZhNS40NDYgNS40NDYgMCAwIDEgMS40NSA3LjA5bC4wMDIuMDAxaC0uMDAybC01LjM0NCA5LjI1N2MuMjA2LjAxLjQxMy4wMTYuNjIxLjAxNiA2LjYyNyAwIDEyLTUuMzczIDEyLTEyIDAtMS41NC0uMjktMy4wMTEtLjgxOC00LjM2NHpNMTIgMTYuMzY0YTQuMzY0IDQuMzY0IDAgMSAxIDAtOC43MjggNC4zNjQgNC4zNjQgMCAwIDEgMCA4LjcyOFoiIC8+PC9zdmc+)](https://chrome.google.com/webstore/detail/ronew/kocjbdahjmgeecieicmoffnjgboechih)
+[![Chrome Extension](https://img.shields.io/chrome-web-store/v/kocjbdahjmgeecieicmoffnjgboechih?label=Chrome%20web%20store&style=for-the-badge&color=4285F4&cacheSeconds=3600&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/ronew/kocjbdahjmgeecieicmoffnjgboechih)
+
+## Through Firefox Add-ons
+
+Simply click the button below, and then click `Add to Firefox`
+
+[![Firefox Extension](https://img.shields.io/amo/v/RoNew?label=Firefox%20add-ons&logo=firefox-browser&logoColor=white&style=for-the-badge&color=FF7139&cacheSeconds=3600)](https://addons.mozilla.org/addon/ronew/)
 
 ## Manually / For Development
 
@@ -93,7 +100,7 @@ Simply click the button below, and then click `Add to Chrome`
 
     `Extensions` -> `RoNew Settings` -> `Always allow on roblox.com`
 
-    </details>
+       </details>
 
 3. Go to the `Servers` tab
 4. You should see a `RoNew` section
@@ -106,7 +113,7 @@ Note that it may take a while on certain games, as Roblox can stop creating new 
 
 If you encounter any issues, please open an issue:
 
-[![Open an issue](https://img.shields.io/github/issues-raw/ThatTimothy/RoNew?label=Open%20an%20issue&logo=github&style=for-the-badge)](https://github.com/ThatTimothy/RoNew/issues/new)
+[![Open an issue](https://img.shields.io/github/issues-raw/ThatTimothy/RoNew?label=Open%20an%20issue&logo=github&style=for-the-badge&cacheSeconds=3600)](https://github.com/ThatTimothy/RoNew/issues/new)
 
 Please include as much detail as possible, such as what you did to get the issue to occur, and what the actual issue is.
 
